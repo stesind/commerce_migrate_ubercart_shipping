@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Install file for commerce_migrate_ubercart_shipping.
+ */
+
+/**
+ * Implements hook_uninstall().
+ * to deregister migrations.
+ */
+function commerce_migrate_ubercart_shipping_uninstall() {
+  $migrations = array(
+    'CommerceMigrateUbercartShipping',
+  );
+  module_load_include('module', 'commerce_migrate_ubercart');
+  foreach ($migrations as $migration) {
+    Migration::deregisterMigration($migration);
+  }
+}

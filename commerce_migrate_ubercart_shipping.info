@@ -1,0 +1,17 @@
+name = Commerce Migrate Ubercart Shipping
+description = Import shipping from Ubercart orders
+core = 7.x
+package = Commerce (contrib)
+dependencies[] = migrate
+dependencies[] = commerce_migrate_ubercart
+dependencies[] = commerce_shipping
+
+; Migrations
+files[] = shipping.inc
+
+; Information added by drupal.org packaging script on 2012-03-19
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "commerce_migrate_ubercart_shipping"
+datestamp = "1332115694"
+
